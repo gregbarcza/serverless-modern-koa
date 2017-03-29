@@ -1,0 +1,41 @@
+{
+  "name": "serverless-koa-starter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/app.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^2.5.0",
+    "serverless-http": "^1.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-async-to-module-method": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-async-to-bluebird": "^1.1.0",
+    "babel-preset-node6": "^11.0.0",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-flowtype": "^2.30.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "flow-bin": "^0.42.0",
+    "serverless-plugin-optimize": "^1.0.0-rc.15"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run flow",
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "eslint": "./node_modules/.bin/eslint .",
+    "build": "npm run eslint && npm run flow && babel src --out-dir dist",
+    "dev": "babel-node src/start"
+  },
+  "author": "Gergo Barcza",
+  "license": "ISC"
+}

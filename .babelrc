@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "node6",
+    "async-to-bluebird"
+  ],
+  "plugins": [
+    "transform-flow-strip-types"
+  ]
+}
