@@ -15,8 +15,8 @@ This hybrid template makes it easy to build koa apps what can be also run on AWS
 `npm run dev`
 
 ### To run it - prod mode:
-`npm run build`
-`node dist/start`
+- `npm run build`
+- `node dist/start`
 
 ### To deploy it on serverless:
 As otherwise:
